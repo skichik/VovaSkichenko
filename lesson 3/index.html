@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>GeekHub - Lesson 3</title>
+</head>
+
+<body>
+<h1>Урок "Формы": теги и их атрибуты </h1>
+<h2>Раскажите немного о себе...</h2>
+<form name="form" id="1" method="get" action="#">
+	Попробуйте создать аналогичную форму. Для целей демонстрации вполне подойдут и вымышленные.
+	<fieldset><legend><strong>Коротко о себе</strong></legend>
+    	<p>
+        	<label>Имя: <input type="text" size="40" name="name"/></label>
+        </p>
+        <p>
+        	<label>Фамилия: <input type="text" size="40" name="last name"/></label>
+        </p>
+        <p>Пол:
+        	<input type="radio"	name="sex" value="man" checked/>Мужской
+            <input type="radio"	name="sex" value="woman" />Женский
+        </p>
+        <p>
+        	<label>Возраст: <input type="text" size="10" name="year"></label>
+        </p>	
+    </fieldset>
+    <fieldset><legend><strong>Подробнее о себе</strong></legend>
+        <input type="radio"	name="sex2" value="boy" checked/>Молодой человек<br>
+        <input type="radio"	name="sex2" value="girl" />Девушка<br>
+        <label><input type="text" size="25" name="born"/>Дата рождения<br></label>
+        <label><input type="text" size="25" name="born"/>Семейное положение<br></label>
+        <label><input type="text" size="25" name="born"/>Социальный статус<br></label>
+        <label><input type="text" size="25" name="born"/>Место жительство<br></label>
+        <strong>Что вы обычно деалете на выходных:</strong><br>
+        <input name="freetime" type="checkbox" value="sleep"/>Сплю<br>
+        <input name="freetime" type="checkbox" value="walk"/>Гуляю с друзьями<br>
+        <input name="freetime" type="checkbox" value="fishing"/>Хожу на рыбалку<br>
+        <input name="freetime" type="checkbox" value="play"/>Играю в игры<br>
+        <strong>Расказать о формах в книге, посвященной HTML:</strong><br>
+        <select name="books" size = "1" >
+        	<option disabled>Site frequency:</option>
+    		<option value="book1">Книга 1</option>
+    		<option value="book2">Книга 2</option>
+            <option value="book3">Книга 3</option>
+        </select><br>
+        <strong>Сколько книг вы прочитали за свою жизнь:</strong><br>
+        <input type="radio"	name="numbbooks" value="0-10"/>0-10<br>
+        <input type="radio"	name="sex" value="11-20" />11-20<br>
+        <input type="radio"	name="sex" value="21-50" />21-50<br>
+        <input type="radio"	name="sex" value="50+" />50+<br>
+        <strong>Ваши коментарии:</strong><br>
+        <textarea rows="10" cols="45" name="comments"></textarea><br>
+        <select name="position" size = "3" multiple >
+    		<option value="position1">Первая позиция</option>
+    		<option selected value="position2">Вторая позиция</option>
+            <option value="position3">Третья позиция</option>
+        </select><br>
+    </fieldset>
+    <fieldset><legend><strong>И в заключении</strong></legend>
+    	<input type="text" size="40" name="field1" value="Это поле было введено до вас"/><br>
+        <label><strong>E-mail:</strong><br><input type="text" size="40" name="email"/></label><br>
+        <strong>Хотите подписаться на самую модную рассылку спама?</strong><br>
+        <i>Выбирете категории</i><br>
+        <input name="spam" type="checkbox" value="equipment"/>Обуродование<br>
+        <input name="spam" type="checkbox" value="lunch"/>Как приготовить обеды<br>
+        <input name="spam" type="checkbox" value="million"/>Заработай миллион за два дня!<br>
+        <strong>На сколько сложная задача:</strong><br>
+        <input type="radio"	name="complexity" value="easy" checked/>Совсем нет<br>
+        <input type="radio"	name="complexity" value="normal"/>Так себе<br>
+        <input type="radio"	name="complexity" value="hard" />Ели справились<br>
+    </fieldset>
+    <input type="submit" name="send" value="Отправить"/>
+</form>
+</body>
+</html>
