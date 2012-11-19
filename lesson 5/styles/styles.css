@@ -1,0 +1,41 @@
+.header {
+	margin : 4px;
+}
+.header h1 {
+		background-color : #000;
+		color:#FFF;
+}
+.content {	
+}
+.square{ 
+	list-style-type : square;
+}
+.content a { 
+	color:#F00;
+}
+.content p {
+	padding:10px;
+	background-color : #D3D3D3;
+	border:solid #960;
+	text-align:right;
+}
+.circle{
+	list-style-type : circle;
+}
+.content .block1{
+	background-color:#006400;
+	color:#FFFF00;
+	padding:10px 25px;
+	margin:0 auto;
+	width:310px;	
+	border-bottom:dashed 2px;
+	border-top:dashed 2px;
+}
+.content span {
+	background-color:#000;
+	color:#3F0;
+	font-size:17px;
+}
+.content .block2{
+	color:#00C;
+}
